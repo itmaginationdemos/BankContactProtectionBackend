@@ -1,0 +1,13 @@
+Django==4.0.1
+distlib==0.3.4
+filelock==3.4.2
+platformdirs==2.5.0
+virtualenv==20.13.1
+python-decouple==3.5
+psycopg2-binary==2.9.3
+django-phone-field==1.8.1
+djangorestframework==3.13.1
+djangorestframework-simplejwt==5.0.0
+phonenumbers==8.12.44
+django-phonenumber-field==6.1.0
+PyJWT==2.3.0
