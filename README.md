@@ -9,6 +9,8 @@
 ```
 
 [![Visit our website](https://img.shields.io/badge/Visit&nbsp;Our&nbsp;Website-ITMAGINATION-black.svg)](https://www.itmagination.com)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+
 
 # ! LINK TO THE VIDEO HERE
 
