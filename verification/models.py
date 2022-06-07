@@ -16,8 +16,10 @@ class VerificationRequest(models.Model):
                               related_name='verificationGivens')
     time = models.DateTimeField(auto_now_add=True, null=False, blank=False)
     timeout = models.DateTimeField(null=False, blank=False)
-    requester_verification_code = models.CharField(max_length=255, null=False, blank=False)
-    given_verification_code = models.CharField(max_length=255, null=False, blank=False)
+    requester_verification_code = models.CharField(
+        max_length=255, null=False, blank=False)
+    given_verification_code = models.CharField(
+        max_length=255, null=False, blank=False)
     status = models.CharField(
         max_length=2,
         choices=VerificationStatus.choices,

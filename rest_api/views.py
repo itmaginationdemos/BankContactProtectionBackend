@@ -33,7 +33,8 @@ class VerificationRequestsViewSet(viewsets.ReadOnlyModelViewSet):
 
     def get_queryset(self):
         return VerificationRequest.objects.filter(
-            (Q(requester=self.request.user) | Q(given=self.request.user)) & Q(valid=True)
+            (Q(requester=self.request.user) | Q(
+                given=self.request.user)) & Q(valid=True)
             & Q(timeout__gte=datetime.datetime.now())
         )
 
@@ -45,15 +46,18 @@ class VerificationRequestsViewSet(viewsets.ReadOnlyModelViewSet):
 
         serializer = RequestVerificationSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
-            phone_number = PhoneNumber(serializer.validated_data.get('phone_number'))
+            phone_number = PhoneNumber(
+                serializer.validated_data.get('phone_number'))
             phone_number.parse()
             if user.phone_number == phone_number:
-                raise PermissionDenied("Not allowed to request verification for own number.")
+                raise PermissionDenied(
+                    "Not allowed to request verification for own number.")
             given = get_object_or_404(CustomUser, phone_number=phone_number)
 
             # Timeouts
             time = datetime.datetime.now()
-            timeout_delta = datetime.timedelta(minutes=settings.VERIFICATION_TIMEOUT_MINUTES)
+            timeout_delta = datetime.timedelta(
+                minutes=settings.VERIFICATION_TIMEOUT_MINUTES)
             timeout = time + timeout_delta
 
             # Verification codes
@@ -77,10 +81,12 @@ class VerificationRequestsViewSet(viewsets.ReadOnlyModelViewSet):
 
             # Invalidate previous Verifications for these users
             with transaction.atomic():
-                VerificationRequest.objects.filter(valid=True, requester=user, given=given).update(valid=False)
+                VerificationRequest.objects.filter(
+                    valid=True, requester=user, given=given).update(valid=False)
                 new_verification_request.save()
 
-            response_serializer = VerificationRequestSerializer(new_verification_request)
+            response_serializer = VerificationRequestSerializer(
+                new_verification_request)
             return Response(response_serializer.data, status=status.HTTP_200_OK)
 
     @action(detail=True, methods=['post'])

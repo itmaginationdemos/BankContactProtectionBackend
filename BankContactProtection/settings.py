@@ -66,8 +66,7 @@ ROOT_URLCONF = 'BankContactProtection.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
-        ,
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -161,7 +160,7 @@ REST_FRAMEWORK = {
 
 # JWT Token configuration
 SIMPLE_JWT = {
-    # TODO: Change lifetime to something more reasonable.
+    # ! In production you want to change this to something more reasonable.
     'ACCESS_TOKEN_LIFETIME': timedelta(days=3650),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=3650),
     'ROTATE_REFRESH_TOKENS': False,
@@ -184,7 +183,7 @@ SIMPLE_JWT = {
     'TOKEN_USER_CLASS': 'rest_framework_simplejwt.models.TokenUser',
 
     'SLIDING_TOKEN_REFRESH_EXP_CLAIM': 'refresh_exp',
-    # TODO: Change lifetime to something more reasonable.
+    # ! Change lifetime to something more reasonable.
     'SLIDING_TOKEN_LIFETIME': timedelta(days=3650),
     'SLIDING_TOKEN_REFRESH_LIFETIME': timedelta(days=3650),
 }

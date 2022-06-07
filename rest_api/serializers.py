@@ -7,7 +7,8 @@ from verification.models import VerificationRequest
 class CustomUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = CustomUser
-        fields = ['id', 'username', 'first_name', 'last_name', 'email', 'is_active', 'is_staff', 'phone_number', ]
+        fields = ['id', 'username', 'first_name', 'last_name',
+                  'email', 'is_active', 'is_staff', 'phone_number', ]
 
 
 class VerificationRequestSerializer(serializers.ModelSerializer):
