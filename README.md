@@ -11,11 +11,12 @@
 [![Visit our website](https://img.shields.io/badge/Visit&nbsp;Our&nbsp;Website-ITMAGINATION-black.svg)](https://www.itmagination.com)
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 
+_This is the repo for the backend. See the repo for the Android frontend [here](https://github.com/itmaginationdemos/BankContactProtectionAndroid)._
 
 # ! LINK TO THE VIDEO HERE
 
 # Bank Contact Protection Backend Application
-A backend implementation of the concept described in *"Bank Contact Protection"* paper prepared by ITMAGINATION.
+A backend implementation of the concept described in the *"Bank Contact Protection"* paper prepared by [ITMAGINATION](https://itmagination.com).
 
 ## Abstract
 The security of modern information systems becomes more and more important. Especially systems that store sensitive medical and financial information. Although IT systems become more complicated, security is as strong as the weakest link in the security chain. Unfortunately in most cases the weakest links of system security are people who use it. 
@@ -30,3 +31,6 @@ This is an implementation of the Proof of Concept presented in the *"Bank Contac
 To make the application easier to understand, a few simplifications have been introduced:
 1. Only basic authentication is implemented – not extra authentication procedures like two steps authentication was provided.
 2. There is a one way communication from mobile application to backend server with REST API – no push notification used.
+
+#### See us on Twitter 
+[![github-readme-twitter](https://github-readme-twitter.gazf.vercel.app/api?id=ITMAGINATION)](https://github.com/gazf/github-readme-twitter)
