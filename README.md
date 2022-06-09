@@ -13,7 +13,7 @@
 
 _This is the repo for the backend. See the repo for the Android frontend [here](https://github.com/itmaginationdemos/BankContactProtectionAndroid)._
 
-# ! LINK TO THE VIDEO HERE
+# [A Rundown of the Solution on YouTube](https://www.youtube.com/watch?v=_7DR-SsTd5I)
 
 # Bank Contact Protection Backend Application
 A backend implementation of the concept described in the *"Bank Contact Protection"* paper prepared by [ITMAGINATION](https://itmagination.com).
