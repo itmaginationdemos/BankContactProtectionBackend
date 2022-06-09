@@ -10,7 +10,7 @@
 
 [![Visit our website](https://img.shields.io/badge/Visit&nbsp;Our&nbsp;Website-ITMAGINATION-black.svg)](https://www.itmagination.com/services/custom-software-development)
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
-[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://www.youtube.com/watch?v=_7DR-SsTd5I)
+[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://www.youtube.com/watch?v=_7DR-SsTd5I)
 
 _This is the repo for the backend. See the repo for the Android frontend [here](https://github.com/itmaginationdemos/BankContactProtectionAndroid)._
 
