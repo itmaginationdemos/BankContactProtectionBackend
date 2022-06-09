@@ -24,7 +24,7 @@ Despite the growing IT systems, classic communication channels are still very po
 
 This is a proof of concept of application improving vulnerabilities in customer contact services based on phone calls between two users. In such scenarios the greatest risk is posed by the insecure authentication procedure of the communication parties.
 
-**Note: This is a Proof Of Concept**
+**Note: This is a Proof Of Concept** <br>
 This is an implementation of the Proof of Concept presented in the *"Bank Contact Protection"* paper prepared by ITMAGINATION. Please bear in mind that the purpose of the publishing this code is showcasing the concept presented in the paper, and not providing an application ready to use in production.
 
 To make the application easier to understand, a few simplifications have been introduced:
