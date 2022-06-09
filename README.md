@@ -32,5 +32,5 @@ To make the application easier to understand, a few simplifications have been in
 1. Only basic authentication is implemented – not extra authentication procedures like two steps authentication was provided.
 2. There is a one way communication from mobile application to backend server with REST API – no push notification used.
 
-#### See us on Twitter 
+#### [See us on Twitter](https://twitter.com/ITMAGINATION/)
 [![github-readme-twitter](https://github-readme-twitter.gazf.vercel.app/api?id=ITMAGINATION)](https://github.com/gazf/github-readme-twitter)
